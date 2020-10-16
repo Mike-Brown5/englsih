@@ -32,6 +32,7 @@ while True:
     user = input("Enter a word ('\z' to end): ")
     out = define(user.lower())
     if( (user == "\z") | (user == "\Z")):
+        print("\nThe App is closed")
         break
     elif type(out) == list:
         # iterating over the output list and print its element
